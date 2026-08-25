@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Plate Detection - Professional License Plate Recognition</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                    <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z"/>
+                </svg>
+                <span>PlateDetect</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#detector">Detector</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Intelligent Vehicle Plate <span class="gradient-text">Recognition</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Advanced AI-powered license plate detection and recognition system.
+                    Achieve 99.2% accuracy with real-time processing.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">99.2%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">&lt;200ms</span>
+                        <span class="stat-label">Processing</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">24/7</span>
+                        <span class="stat-label">Availability</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">📸</div>
+                    <p>Upload Image</p>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">🤖</div>
+                    <p>AI Detection</p>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">✅</div>
+                    <p>Results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2>Powerful Features</h2>
+            <p>Everything you need for professional plate detection</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>Process images in milliseconds with optimized inference</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>High Accuracy</h3>
+                <p>State-of-the-art YOLO model for precise detection</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔤</div>
+                <h3>OCR Integration</h3>
+                <p>Automatic text extraction from detected plates</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Detailed Analytics</h3>
+                <p>Confidence scores and bounding box coordinates</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure API</h3>
+                <p>Enterprise-grade security with API key authentication</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>Works seamlessly on desktop, tablet, and mobile</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="section-header">
+            <h2>How It Works</h2>
+            <p>Simple three-step process</p>
+        </div>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Upload Image</h3>
+                <p>Select or drag your vehicle image</p>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>AI Processing</h3>
+                <p>Advanced detection algorithm runs</p>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Get Results</h3>
+                <p>View detected plates instantly</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Detector Section -->
+    <section id="detector" class="detector-section">
+        <div class="detector-container">
+            <div class="detector-header">
+                <h2>Plate Detection Engine</h2>
+                <p>Upload an image to detect vehicle license plates</p>
+            </div>
+            <div class="detector-content">
+                <!-- Upload Area -->
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3>Drop your image here</h3>
+                    <p>or click to browse</p>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+
+                <!-- Results Area -->
+                <div class="results-area" id="resultsArea" style="display: none;">
+                    <div class="results-header">
+                        <h3>Detection Results</h3>
+                        <div class="results-actions">
+                            <button class="btn-export" id="exportBtn">⬇ Export Results</button>
+                            <button class="btn-reset" id="resetBtn">← New Detection</button>
+                        </div>
+                    </div>
+                    <div class="results-content">
+                        <!-- Image Preview -->
+                        <div class="image-preview">
+                            <img id="previewImage" src="" alt="Preview">
+                            <canvas id="detectionCanvas"></canvas>
+                            <div class="loading-spinner" id="loadingSpinner" style="display: none;">
+                                <div class="spinner"></div>
+                                <p>Processing image...</p>
+                            </div>
+                        </div>
+
+                        <!-- Detection Results -->
+                        <div class="detection-results">
+                            <div class="result-stats">
+                                <div class="stat-box">
+                                    <span class="stat-label">Plates Detected</span>
+                                    <span class="stat-value" id="plateCount">0</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-label">Processing Time</span>
+                                    <span class="stat-value" id="processingTime">0ms</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-label">Avg Confidence</span>
+                                    <span class="stat-value" id="avgConfidence">0%</span>
+                                </div>
+                            </div>
+
+                            <!-- Plates List -->
+                            <div class="plates-list" id="platesList">
+                                <!-- Dynamically populated -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PlateDetect</h4>
+                <p>Professional vehicle plate detection system</p>
+            </div>
+            <div class="footer-section">
+                <h4>Technology</h4>
+                <ul>
+                    <li><a href="#">Ultralytics YOLO</a></li>
+                    <li><a href="#">FastAPI</a></li>
+                    <li><a href="#">Computer Vision</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PlateDetect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

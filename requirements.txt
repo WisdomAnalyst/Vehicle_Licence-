@@ -1,0 +1,47 @@
+# Web Framework & FastAPI
+fastapi==0.136
+uvicorn[standard]==0.48.0
+python-multipart==0.0.32
+pydantic>=2.9.0
+pydantic-settings==2.1.0
+
+# HTTP & Requests
+requests==2.31.0
+httpx==0.28.1
+
+# Environment Variables
+python-dotenv==1.2.2
+
+# Image Processing
+Pillow==10.0.0
+opencv-python==4.8.1.78
+
+# OCR (plate text extraction) - also requires the Tesseract binary, see README
+pytesseract==0.3.13
+
+# Data Validation
+validators==0.22.0
+
+# Logging
+loguru==0.7.2
+
+# Existing Packages
+blinker==1.9.0
+certifi==2026.7.22
+charset-normalizer==3.5.1
+click==8.4.2
+colorama==0.4.6
+Flask==2.3.3
+idna==3.19
+itsdangerous==2.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+packaging==26.3
+setuptools==83.0.0
+urllib3==2.7.0
+Werkzeug==2.3.7
+wheel==0.47.0
+
+# Testing (Optional)
+pytest==7.4.3
+pytest-asyncio==0.21.1
