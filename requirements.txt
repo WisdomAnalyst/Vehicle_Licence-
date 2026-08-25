@@ -1,6 +1,6 @@
 # Web Framework & FastAPI
-fastapi==0.136
-uvicorn[standard]==0.48.0
+fastapi==0.104.1
+uvicorn[standard]==0.30.0
 python-multipart==0.0.32
 pydantic>=2.9.0
 pydantic-settings==2.1.0
@@ -13,11 +13,16 @@ httpx==0.28.1
 python-dotenv==1.2.2
 
 # Image Processing
-Pillow==10.0.0
-opencv-python==4.8.1.78
+Pillow>=12.0.0
+opencv-python-headless==4.8.1.78
 
-# OCR (plate text extraction) - also requires the Tesseract binary, see README
+# OCR (plate text extraction)
 pytesseract==0.3.13
+
+# AI/ML - YOLO & Ultralytics
+ultralytics
+torch
+torchvision
 
 # Data Validation
 validators==0.22.0
